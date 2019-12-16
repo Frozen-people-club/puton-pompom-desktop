@@ -11,6 +11,8 @@ function createWindow () {
   win = new BrowserWindow({
     width: 800,
     height: 600,
+    frame: false,
+    title: "Avocether",
     webPreferences: {
       nodeIntegration: true
     }
@@ -22,6 +24,9 @@ function createWindow () {
   // Отображаем средства разработчика.
   win.webContents.openDevTools()
 
+  // Устанаваливает идентификатор прогресса в меню задач
+  win.setProgressBar(0.3)
+
   // Будет вызвано, когда окно будет закрыто.
   win.on('closed', () => {
     // Разбирает объект окна, обычно вы можете хранить окна     
@@ -29,6 +34,7 @@ function createWindow () {
     // тогда вы должны удалить соответствующий элемент.
     win = null
   })
+  win.show()
 }
 
 // Этот метод будет вызываться, когда Electron закончит 
