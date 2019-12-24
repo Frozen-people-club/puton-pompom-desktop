@@ -1,0 +1,34 @@
+.dayWeatherItem {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    border-bottom: 1px solid #E4E3E4;
+    padding-bottom: 8px;
+    padding-top: 8px;
+    align-items: center;
+
+    &:last-child {
+        border-bottom: none;
+    }
+}
+
+.dayWeatherItem__date {
+    font-size: 20px;
+    @include media-breakpoint-down (md) {
+        font-size: 14px
+    }
+}
+
+.dayWeatherItem__temp {
+    font-size: 23px;
+    line-height: 27px;
+    width: 42px;
+    text-align: right;
+    @include media-breakpoint-down (md) {
+        font-size: 17px
+    }
+
+}
+.dayWeatherItem__icon {
+    display: inline-flex;
+}

@@ -1,0 +1,24 @@
+.dayWeatherList {
+    background: #FFFFFF;
+    box-shadow: 4.8461px 9.6922px 3.87688px rgba(0, 0, 0, 0.25);
+    border-radius: 48.461px;
+    padding: 35px;
+    height: 475px;
+    width: 355px;
+    margin: auto;
+    padding-top: 15px;
+    @include media-breakpoint-down (md) {
+        width: 270px;
+        height: 440px;
+    }
+}
+.dayWeatherList__title {
+    font-size: 24px;
+    line-height: 28px;
+    padding-bottom: 10px;
+    @include media-breakpoint-down (md) {
+        font-size: 17px;
+        line-height: 20px;
+        padding-bottom: 0;
+    }
+}

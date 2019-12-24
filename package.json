@@ -1,7 +1,7 @@
 {
   "name": "avocether",
   "version": "0.1.0",
-  "main": "public/main-app.js",
+  "main": "public/electron.js",
   "author": "puton-pompom",
   "build": {
     "appId": "avocether.desk"
@@ -16,8 +16,12 @@
     "electron-is-dev": "^1.1.0",
     "node-sass": "^4.13.0",
     "react": "^16.12.0",
+    "react-animated-weather": "^3.0.0",
     "react-dom": "^16.12.0",
-    "react-scripts": "3.3.0"
+    "react-rain-animation": "^1.0.4",
+    "react-scripts": "3.3.0",
+    "react-snow": "0.0.1",
+    "react-snow-effect": "^1.2.0"
   },
   "scripts": {
     "react-start": "react-scripts start",
@@ -44,9 +48,10 @@
     ]
   },
   "devDependencies": {
-    "concurrently": "^5.0.1",
-    "electron": "^7.1.5",
+    "concurrently": "^5.0.2",
+    "electron": "^7.1.7",
     "electron-builder": "^21.2.0",
+    "electron-packager": "^14.1.1",
     "wait-on": "^3.3.0"
   }
 }

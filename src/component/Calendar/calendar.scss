@@ -1,0 +1,19 @@
+.Calendar__icon img{
+  width: 60px;
+  height: 60px;
+}
+.Calendar {
+  display: flex;
+  flex-direction: row;
+  align-items: center
+}
+.Calendar__wrapper {
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.Calendar__time {
+  font-size: 28px;
+  line-height: 32px;
+  text-align: left;
+}
