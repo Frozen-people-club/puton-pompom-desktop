@@ -6,6 +6,13 @@
   "description": "weather app",
   "build": {
     "appId": "avocether.id",
+    "files": [
+      "node_modules/**/*",
+      "package.json",
+      "public/*",
+      "package-lock.json",
+      "src/**/*"
+    ],
     "productName": "Avocether",
     "win": {
       "icon": "public/icon.ico",
