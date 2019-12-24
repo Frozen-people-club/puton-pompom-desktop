@@ -6,8 +6,10 @@ let win
 
 function createWindow () {
   win = new BrowserWindow({
-    width: 900,
-    height: 700,
+    maxWidth: 950,
+    maxHeight: 700,
+    resizable: false,
+    icon: path.join(__dirname, '..public/index.html'),
     title: "Avocether",
     webPreferences: {
       nodeIntegration: true

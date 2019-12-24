@@ -3,8 +3,21 @@
   "version": "0.1.0",
   "main": "public/electron.js",
   "author": "puton-pompom",
+  "description": "weather app",
   "build": {
-    "appId": "avocether.desk"
+    "appId": "avocether.id",
+    "productName": "Avocether",
+    "win": {
+      "icon": "public/icon.ico",
+      "target": {
+          "target": "nsis",
+          "arch": "x64"
+        }
+    },
+    "mac": {
+      "icon": "public/icon.icns",
+      "target": "dmg"
+    }
   },
   "homepage": "./",
   "dependencies": {
@@ -51,7 +64,6 @@
     "concurrently": "^5.0.2",
     "electron": "^7.1.7",
     "electron-builder": "^21.2.0",
-    "electron-packager": "^14.1.1",
     "wait-on": "^3.3.0"
   }
 }
