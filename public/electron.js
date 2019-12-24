@@ -9,7 +9,7 @@ function createWindow () {
     maxWidth: 950,
     maxHeight: 700,
     resizable: false,
-    icon: path.join(__dirname, '..public/index.html'),
+    //icon: path.join(__dirname, '..public/index.html'),
     title: "Avocether",
     webPreferences: {
       nodeIntegration: true
@@ -17,9 +17,6 @@ function createWindow () {
   })
 
   win.loadURL(isDev ? 'http://localhost:3000' : `file://${path.join(__dirname, '..build/index.html')}`)
-
-  // Отображаем средства разработчика.
-  //win.webContents.openDevTools()
 
   win.on('closed', () => {
     win = null
